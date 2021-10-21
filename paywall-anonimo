@@ -204,14 +204,12 @@
                 <div class="article-paywall__pricing--limited">Oferta por tempo limitado</div>
                 <div class="article-paywall__title">Assine e tenha acesso ilimitado:</div>
                 <div class="article-paywall__subtitle--price"> Estadão com até <span class="article-paywall__pricing--bold">90% de desconto</span> no primeiro mês</div>
-                {{#customData}}
                 <a href="https://assine.estadao.com.br/landingpage/planos.html/?canal=PAY&amp;referrer_url={{referrer_url}}&amp;paywall_dinamico=paywall_dinamico_zephr">
-                {{/customData}}
                     <div id="openLandingPage" class="article-paywall__button article-paywall__button--green"> Assine agora </div>
                 </a>
             </div>
             <div class="article-paywall__card">
-                <div class="article-paywall__title">Já é assinante Estadão?</div>
+                <div class="article-paywall__title">Já é assinante Estadão???</div>
                 <div class="article-paywall__subtitle">Clique para acessar área exclusiva</div>
                 <a id="openLogin" href="https://acesso.estadao.com.br/login/logout/?r=https://acesso.estadao.com.br/login/?r=">
                     <div class="article-paywall__button article-paywall__button--blue"> Entrar </div>
