@@ -1,0 +1,225 @@
+
+<style>
+    .article-paywall__wrapper {
+        display: contents;
+    }
+
+    .already-sliced {
+        position: relative;
+        max-height: 150px;
+        overflow: hidden;
+    }
+
+    .already-sliced::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 136px;
+        background: hsla(0,0%,100%,.2);
+        background: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(#fff));
+        background: linear-gradient(180deg, hsla(0, 0%, 100% ,0) 0, #fff);
+    }
+
+    .article-paywall {
+        color: #5d5d5d;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: center;
+        text-align: center;
+        font-family: 'Lato-Regular', 'Lato', 'Georgia';
+        max-width: 60vw;
+        margin: auto;
+        margin-bottom: 48px;
+        padding-bottom: 2rem;
+    }
+
+    .article-paywall__section {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .article-paywall__card-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        margin: 0 2rem;
+        padding-bottom: 1rem;
+        border-bottom: solid 0.5px #ededed;
+    }
+
+    .article-paywall__card {
+        flex: 1;
+        min-width: 200px;
+        max-width: 300px;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 3px;
+        box-shadow: 1px 1px 4px 0 rgba(209, 209, 209, 0.5);
+        background-color: #ffffff;
+    }
+
+    .article-paywall__top-text {
+        margin-bottom: 1rem;
+    }
+
+    .article-paywall__title {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.14px;
+        text-align: center;
+    }
+
+    .article-paywall__subtitle {
+        flex: 1;
+        line-height: 1.8;
+        display: flex;
+        align-items: flex-end;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .article-paywall__subtitle--price {
+        margin-top: .5rem;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    .article-paywall__pricing--limited {
+        padding: .2rem .5rem;
+        border-radius: 10px;
+        border: solid 0.5px #539c3f;
+        background-color: #ffffff;
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #539c3f;
+        align-self: center;
+        margin-top: -2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .article-paywall__pricing--bold {
+        font-size: 22px;
+        font-weight: 900;
+    }
+
+    .article-paywall__pricing--list {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .article-paywall__more-plans {
+        font-size: 14px;
+        margin-top: 2rem;
+        text-decoration: underline;
+    }
+
+    .article-paywall__button--green {
+        border: solid 1px #539c3f;
+        background-color: #539c3f;
+        transition: .3s ease all;
+    }
+
+    .article-paywall__button--green:hover {
+        color: #539c3f;
+        background-color: white;
+        
+    }
+
+    .article-paywall__button--blue {
+        border: solid 1px #245fb4;
+        background-color: #245fb4;
+        transition: .3s ease all;
+    }
+
+    .article-paywall__button--blue:hover {
+        color: #245fb4;
+        background-color: white;
+    }
+
+    .article-paywall__button {
+        margin-top: 1rem;
+        padding: 1rem;
+        box-shadow: 1px 1.7px 4px 0 rgba(0, 0, 0, 0.1);
+        white-space: nowrap;
+        cursor: pointer;
+        align-self: center;
+        letter-spacing: normal;
+        font-weight: 600;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 5px;
+        transition: .3s ease all;
+    }
+
+    .article-paywall__button--small {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .article-paywall__close:hover {
+        font-weight: bold;
+    }
+
+    .article-paywall__link {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .article-paywall__logo {
+        padding-top: 2rem;
+    } 
+</style>
+<div class="article-paywall">   
+    <div class="article-paywall__wrapper">
+        <div class="row">
+            <div class="col-lg article-paywall__top-text"><strong>Selecione uma opção abaixo para continuar lendo a notícia:</strong></div>
+        </div>
+        <div class="article-paywall__card-container">
+            <div class="article-paywall__card">
+                <div class="article-paywall__pricing--limited">Oferta por tempo limitado</div>
+                <div class="article-paywall__title">Assine e tenha acesso ilimitado:</div>
+                <div class="article-paywall__subtitle--price"> Estadão com até <span class="article-paywall__pricing--bold">90% de desconto</span> no primeiro mês</div>
+                <a href="https://assine.estadao.com.br/landingpage/planos.html/?canal=PAY&amp;referrer_url={{referrer_url}}&amp;paywall_dinamico=paywall_dinamico_zephr">
+                    <div id="openLandingPage" class="article-paywall__button article-paywall__button--green"> Assine agora </div>
+                </a>
+            </div>
+            <div class="article-paywall__card">
+                <div class="article-paywall__title">Já é assinante Estadão?</div>
+                <div class="article-paywall__subtitle">Clique para acessar área exclusiva</div>
+                <a id="openLogin" href="https://acesso.estadao.com.br/login/logout/?r=https://acesso.estadao.com.br/login/?r=">
+                    <div class="article-paywall__button article-paywall__button--blue"> Entrar </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg article-paywall__logo">
+                <img src="https://statics.estadao.com.br/s2016/portal/logos/logo-estadao-cavalo.svg" alt="Estadao" width="150px" height="32px">
+            </div>
+        </div>
+    </div>
+</div> 
