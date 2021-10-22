@@ -204,7 +204,7 @@
                 <div class="article-paywall__pricing--limited">Oferta por tempo limitado</div>
                 <div class="article-paywall__title">Assine e tenha acesso ilimitado:</div>
                 <div class="article-paywall__subtitle--price"> Estadão com até <span class="article-paywall__pricing--bold">90% de desconto</span> no primeiro mês</div>
-                <a href="https://assine.estadao.com.br/landingpage/planos.html/?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_dinamico_zephr">
+                <a href="https://assine.estadao.com.br/landingpage/planos.html/?canal=PAY&amp;referrer_url=&amp;paywall_dinamico=paywall_dinamico_zephr">
                     <div id="openLandingPage" class="article-paywall__button article-paywall__button--green"> Assine agora </div>
                 </a>
             </div>
