@@ -209,7 +209,7 @@
                 </a>
             </div>
             <div class="article-paywall__card">
-                <div class="article-paywall__title">Já é assinante Estadão?</div>
+                <div class="article-paywall__title">Já é assinante Estadão???</div>
                 <div class="article-paywall__subtitle">Clique para acessar área exclusiva</div>
                 <a id="openLogin" href="https://acesso.estadao.com.br/login/logout/?r=https://acesso.estadao.com.br/login/?r=">
                     <div class="article-paywall__button article-paywall__button--blue"> Entrar </div>
