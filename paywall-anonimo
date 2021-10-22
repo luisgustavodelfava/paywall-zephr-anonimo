@@ -223,3 +223,6 @@
         </div>
     </div>
 </div> 
+<script>
+console.log({{blaize}});
+</script>
