@@ -202,7 +202,7 @@
             <div class="article-paywall__card">
                 <div class="article-paywall__pricing--limited">{{oferta_tempo}}</div>
                 <div class="article-paywall__title">Assine e tenha acesso ilimitado:</div>
-                <div class="article-paywall__subtitle--price">{{taxa_desconto}}</div>
+                <div class="article-paywall__subtitle--price">{{texto_desconto_1}}<span class="article-paywall__pricing--bold">{{texto_desconto_negrito}}</span>{{texto_desconto_2}}</div>
                 <a href="{{url_assine}}/?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_dinamico_zephr">
                     <div id="openLandingPage" class="article-paywall__button article-paywall__button--green"> {{texto_botao_assine}}</div>
                 </a>
