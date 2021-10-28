@@ -1,3 +1,330 @@
+<style>
+.main{
+    background: rgba(255,255,255,.5);
+    display: table;
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+
+}
+
+.main>.center {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-top: 15vh;
+}
+
+.main>.center .wrapper {
+    min-height: 60vh;
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+
+.main[data-modal=ofertas] .center .wrapper .header-line {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    height: 26px;
+    line-height: 26px;
+    background-color: #2575e8;
+    vertical-align: top;
+}
+
+[class^=icon-][class^=icon-lock]:before {
+    display: block;
+    position: relative;
+    content: "";
+    width: 3px;
+    height: 5px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    top: 0;
+    left: 1px;
+}
+
+[class^=icon-][class^=icon-lock]:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 5px;
+    background: #fff;
+    position: relative;
+    left: 0;
+    top: -4px;
+    border-radius: 1px;
+}
+
+.main>.center .wrapper .container {
+    padding-bottom: 30px;
+}
+
+.main .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1168px;
+}
+
+.main[data-modal=ofertas] .container .header {
+    padding-top: 30px;
+    max-width: 1000px;
+}
+
+.main .container .header {
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    display: table;
+    width: 100%;
+    max-width: 800px;
+}
+
+.head-user {
+    float: left;
+    color: #2575e8;
+    font-size: 14px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.head-user>.cover {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    border: 1px solid #2575e8;
+}
+
+.head-user>.name {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.head-user>ul.menu {
+    position: absolute;
+    top: calc(100% - 3px);
+    left: 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    padding: 0;
+    margin: 0;
+    box-shadow: 2px -2px 2px -2px rgb(0 0 0 / 30%);
+    border-radius: 3px;
+    z-index: 2;
+    display: none;
+    white-space: nowrap;
+}
+
+.head-user>ul.menu>li>a {
+    float: none;
+    display: inline-block;
+    padding: 8px 15px;
+}
+
+.main .logout {
+    font-size: 14px;
+}
+
+.head-user>ul.menu>li>a span {
+    position: relative;    
+    top: -2px;
+    margin-right: 3px;
+}
+
+.main[data-modal=ofertas] .container .header>.logout {
+    float: left;
+}
+
+.main[data-modal=ofertas] .container .header .back-to-home, .main[data-modal=ofertas] .container .header>.logout {
+    float: right;
+    font-family: Flama-Medium,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+}
+
+
+.main[data-modal=ofertas] .container .header .back-to-home, .main[data-modal=ofertas] .container .header>.logout {
+    float: right;
+    font-family: Flama-Medium,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+.main[data-modal=ofertas] .container .inner>.top>h1, .main[data-modal=ofertas] .container .inner>h1 {
+    font-family: Estado-Headline-Bold,sans-serif;
+    text-align: center;
+    font-size: 32px;
+}
+
+.main[data-modal=ofertas] .container .inner>.top>p, .main[data-modal=ofertas] .container .inner>p {
+    font-size: 16px;
+    color: #444;
+    text-align: center;
+}
+
+.lista-ofertas {
+    display: table;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.lista-ofertas .item {
+    display: inline-block;
+    padding: 0 15px;
+    vertical-align: top;
+}
+
+.lista-ofertas .item .tab_list {
+    list-style: none;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 45px;
+    max-width: 300px;
+}
+
+.lista-ofertas .item .tab_list>.tab.active {
+    background: #fff;
+    cursor: default;
+    position: relative;
+    z-index: 1;
+}
+
+.lista-ofertas .item .tab_list>.tab {
+    float: left;
+    background: #005f93;
+    border: 2px solid rgba(0,95,147,.1);
+    border-bottom: none;
+    padding: 0 20px;
+    margin-right: 5px;
+    display: table;
+    text-align: center;
+    height: calc(100% + 2px);
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.lista-ofertas .item .tab_list>.tab.active>span {
+    color: #000;
+}
+
+.lista-ofertas .item .tab_list>.tab>span {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    font-family: Flama-Bold,sans-serif;
+}
+
+.lista-ofertas .item .tab_list>.tab.active em {
+    color: #f7b500;
+}
+
+.lista-ofertas .item .tab_list>.tab em {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: Flama-Book,sans-serif;
+    text-transform: uppercase;
+    color: #f7b500;
+}
+.lista-ofertas .item .inner-oferta {
+    position: relative;
+    background: #fff;
+    border: 2px solid rgba(0,95,147,.1);
+    border-radius: 0 3px 3px 3px;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    padding: 15px;
+}
+
+.lista-ofertas .item .inner-oferta .titulo {
+    font-family: Flama-Medium,Sans-Serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+    color: #232323;
+}
+
+.lista-ofertas .item .inner-oferta .details>p {
+    padding-left: 18px;
+    font-size: 16px;
+    margin: 10px 0;
+    font-family: Flama-Book,Sans-Serif;
+    color: #444;
+}
+.lista-ofertas .item .inner-oferta .details>p .icon-check, .lista-ofertas .item .inner-oferta .details>p .icon-check-yellow {
+    margin-left: -18px;
+    background: #005f93;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    line-height: 14px;
+    border-radius: 30px;
+    margin-right: 5px;
+    top: -2px;
+    position: relative;
+}
+
+.lista-ofertas .item .inner-oferta .chapeu {
+    border-bottom: solid 1px #e7e7e7;
+    padding-bottom: 12px;
+}
+
+.lista-ofertas .item .inner-oferta .price {
+    font-family: Flama-Bold,Sans-Serif;
+    font-size: 24px;
+    color: #232323;
+}
+
+.lista-ofertas .item .inner-oferta .price>em {
+    font-size: 12px;
+    font-family: Flama-Book,Sans-Serif;
+    font-style: normal;
+    margin-left: 3px;
+}
+
+.lista-ofertas .item .inner-oferta .price-detail {
+    font-size: 14px;
+    color: #005f93;
+}
+
+.lista-ofertas .item .inner-oferta .alert {
+    font-size: 14px;
+    color: #444;
+}
+
+.lista-ofertas .item .inner-oferta .btn-assine {
+    display: table;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+.lista-ofertas .item .inner-oferta .btn-assine a {
+    text-transform: uppercase;
+    padding: 0 25px;
+}
+.lista-ofertas .item .inner-oferta .bottom-text {
+    font-size: 10px;
+    margin: 3px 0 0 0;
+    text-align: center;
+    color: #888;
+}
+</style>
 <div class="main" data-modal="ofertas">
     <div class="center">
         <div class="wrapper default">
@@ -77,3 +404,4 @@
         </div>
     </div>
 </div>
+
