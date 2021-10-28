@@ -1,224 +1,79 @@
-<style>
-    .article-paywall__wrapper {
-        display: contents;
-    }
+<div class="main" data-modal="ofertas">
+    <div class="center">
+        <div class="wrapper default">
+            <div class="header-line"><i class="icon-lock-circle"></i> Conteúdo exclusivo para assinantes</div>
+            <div class="container">
+                <div class="header">
+                    <div class="head-user" style="display:none;">
+                        <div class="cover" style="background-image: url('https://meu.estadao.com.br/static/img/perfil.png')"></div>
+                        <div class="name">Olá, <b>null!</b></div>
+                        <ul class="menu">
+                            <li>
+                                <a class="logout" href="javascript:void(0)" title="Alterar Conta"><span>Alterar Conta</span><i class="icon-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="logout" style="" href="javascript:void(0)" title="Sou assinante"><i class="icon-arrow-left-round"></i> Sou assinante</a>
+                    <a class="back-to-home" href="https://www.estadao.com.br" title="Estadão | As Últimas Notícias do Brasil e do Mundo">
+                        Destaques do dia <i class="icon-arrow-right-round"></i>
+                    </a>
+                </div>
 
-    .already-sliced {
-        position: relative;
-        max-height: 150px;
-        overflow: hidden;
-    }
-
-    .already-sliced::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 136px;
-        background: hsla(0,0%,100%,.2);
-        background: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(#fff));
-        background: linear-gradient(180deg, hsla(0, 0%, 100% ,0) 0, #fff);
-    }
-
-    .article-paywall {
-        color: #5d5d5d;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        align-items: center;
-        text-align: center;
-        font-family: 'Lato-Regular', 'Lato', 'Georgia';
-        max-width: 60vw;
-        margin: auto;
-        margin-bottom: 48px;
-        padding-bottom: 2rem;
-    }
-
-    .article-paywall__section {
-        width: 100%;
-        margin: 2rem 0;
-    }
-
-    .article-paywall__card-container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: center;
-        margin: 0 2rem;
-        padding-bottom: 1rem;
-        border-bottom: solid 0.5px #ededed;
-    }
-
-    .article-paywall__card {
-        flex: 1;
-        min-width: 200px;
-        max-width: 300px;
-        margin: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        background-color: white;
-        padding: 1.5rem;
-        border-radius: 3px;
-        box-shadow: 1px 1px 4px 0 rgba(209, 209, 209, 0.5);
-        background-color: #ffffff;
-    }
-
-    .article-paywall__top-text {
-        margin-bottom: 1rem;
-    }
-
-    .article-paywall__title {
-        font-size: 16px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: -0.14px;
-        text-align: center;
-    }
-
-    .article-paywall__subtitle {
-        flex: 1;
-        line-height: 1.8;
-        display: flex;
-        align-items: flex-end;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: normal;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .article-paywall__subtitle--price {
-        margin-top: .5rem;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: normal;
-        text-align: center;
-    }
-
-    .article-paywall__pricing--limited {
-        padding: .2rem .5rem;
-        border-radius: 10px;
-        border: solid 0.5px #539c3f;
-        background-color: #ffffff;
-        font-size: 12px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: center;
-        color: #539c3f;
-        align-self: center;
-        margin-top: -2.2rem;
-        margin-bottom: 1rem;
-    }
-
-    .article-paywall__pricing--bold {
-        font-size: 22px;
-        font-weight: 900;
-    }
-
-    .article-paywall__pricing--list {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .article-paywall__more-plans {
-        font-size: 14px;
-        margin-top: 2rem;
-        text-decoration: underline;
-    }
-
-    .article-paywall__button--green {
-        border: solid 1px #539c3f;
-        background-color: #539c3f;
-        transition: .3s ease all;
-    }
-
-    .article-paywall__button--green:hover {
-        color: #539c3f;
-        background-color: white;
-        
-    }
-
-    .article-paywall__button--blue {
-        border: solid 1px #245fb4;
-        background-color: #245fb4;
-        transition: .3s ease all;
-    }
-
-    .article-paywall__button--blue:hover {
-        color: #245fb4;
-        background-color: white;
-    }
-
-    .article-paywall__button {
-        margin-top: 1rem;
-        padding: 1rem;
-        box-shadow: 1px 1.7px 4px 0 rgba(0, 0, 0, 0.1);
-        white-space: nowrap;
-        cursor: pointer;
-        align-self: center;
-        letter-spacing: normal;
-        font-weight: 600;
-        text-align: center;
-        color: #ffffff;
-        border-radius: 5px;
-        transition: .3s ease all;
-    }
-
-    .article-paywall__button--small {
-        max-width: 250px;
-        margin: auto;
-    }
-
-    .article-paywall__close:hover {
-        font-weight: bold;
-    }
-
-    .article-paywall__link {
-        text-decoration: underline;
-        color: blue;
-    }
-
-    .article-paywall__logo {
-        padding-top: 2rem;
-    } 
-</style>
-<div class="article-paywall">   
-    <div class="article-paywall__wrapper">
-        <div class="row">
-            <div class="col-lg article-paywall__top-text"><strong>{{texto_topo}}</strong></div>
-        </div>
-        <div class="article-paywall__card-container">
-            <div class="article-paywall__card">
-                <div class="article-paywall__pricing--limited">{{oferta_tempo}}</div>
-                <div class="article-paywall__title">{{titulo_assine}}</div>
-                <div class="article-paywall__subtitle--price">{{texto_desconto_1}}<span class="article-paywall__pricing--bold">{{texto_desconto_negrito}}</span>{{texto_desconto_2}}</div>
-                <a href="{{url_assine}}/?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_dinamico_zephr">
-                    <div id="openLandingPage" class="article-paywall__button article-paywall__button--green"> {{texto_botao_assine}}</div>
-                </a>
-            </div>
-            <div class="article-paywall__card">
-                <div class="article-paywall__title">{{titulo_acesso}}</div>
-                <div class="article-paywall__subtitle">{{subtitulo_acesso}}</div>
-                <a id="openLogin" href="https://acesso.estadao.com.br/login/logout/?r=https://acesso.estadao.com.br/login/?r=">
-                    <div class="article-paywall__button article-paywall__button--blue"> {{texto_botao_acesso}} </div>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg article-paywall__logo">
-                <img src="{{url_logo}}" alt="Estadao" width="150px" height="32px">
+                <div class="inner">
+                    <div class="top">
+                        <h1 class="title-h1">A sua melhor opção é a informação!</h1>
+                        <p>Assine e garanta informação com profundidade, análise e opinião.</p>
+                    </div>
+                    <div class="lista-ofertas">
+                        
+                    <section class="item">
+                            <ul class="tab_list"><li class="tab active"><span>Mensal<br><em>60% off</em></span></li></ul>
+                            
+                        <div class="inner-oferta active">
+                                <h1 class="titulo">Jornal impresso (fins de semana)<br>+ Acesso Digital Completa</h1>
+                                <div class="details"><p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p><p><i class="icon-check"></i>Aplicativo sem publicidade</p><p><i class="icon-check"></i>Acervo digital desde 1875</p><p><i class="icon-check"></i>Réplica do impresso em versão digital</p><p><i class="icon-check"></i><strong>Versão impressa do jornal aos fins de semana</strong></p></div>
+                                <div class="chapeu"></div>
+                                
+                                <div class="price">R$ 22,90<em>/ mês</em></div>
+                                <div class="price-detail">No primeiro ano</div>
+                                <div class="alert">Após este período: R$ 56,90</div>
+                                <div class="btn-assine assine">
+                                    <a href="https://assine.estadao.com.br/subscribe/estadao-impresso-em-casa-2290-am300836?canal=PAY&amp;referrer_url=https%3A%2F%2Fciencia.estadao.com.br%2F&amp;paywall_dinamico=anonimo_identificado_navegg" class="btn green paywall-assine" target="_blank">Assinar</a>
+                                </div>
+                                <p class="bottom-text">Cancele quando quiser</p>
+                            </div></section><section class="item">
+                            <ul class="tab_list"><li class="tab active"><span>Mensal<br><em>90% off</em></span></li></ul>
+                            
+                        <div class="inner-oferta active">
+                                <h1 class="titulo">Acesso Digital Completa</h1>
+                                <div class="details"><p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p><p><i class="icon-check"></i>Aplicativo sem publicidade</p><p><i class="icon-check"></i><strong>Acervo digital desde 1875</strong></p><p><i class="icon-check"></i><strong>Réplica do impresso em versão digital</strong></p></div>
+                                <div class="chapeu"></div>
+                                
+                                <div class="price">R$ 1,90<em>/ mês</em></div>
+                                <div class="price-detail">No primeiro mês</div>
+                                <div class="alert">Após este período: R$ 19,90</div>
+                                <div class="btn-assine assine">
+                                    <a href="https://assine.estadao.com.br/subscribe/estadao-digital-completa-190-1990-am100863?canal=PAY&amp;referrer_url=https%3A%2F%2Fciencia.estadao.com.br%2F&amp;paywall_dinamico=anonimo_identificado_navegg" class="btn green paywall-assine" target="_blank">Assinar</a>
+                                </div>
+                                <p class="bottom-text">Cancele quando quiser</p>
+                            </div></section><section class="item">
+                            <ul class="tab_list"><li class="tab active destaque-2"><span>Mensal<br><em>29% off</em></span></li></ul>
+                            
+                        <div class="inner-oferta active destaque-2">
+                                <h1 class="titulo">Acesso Digital Básica</h1>
+                                <div class="details"><p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p><p><i class="icon-check"></i>Aplicativo sem publicidade</p></div>
+                                <div class="chapeu">Por tempo limitado!</div>
+                                
+                                <div class="price">7 dias grátis</div>
+                                <div class="price-detail">Após este período: R$ 6,90/mês</div>
+                                <div class="alert">nos <b>03 primeiros meses</b> e depois <span style="white-space: nowrap;">R$ 9,90/mês</span></div>
+                                <div class="btn-assine assine">
+                                    <a href="https://assine.estadao.com.br/subscribe/estadao-digital-completa-am101103-c000034a?canal=PAY&amp;referrer_url=https%3A%2F%2Fciencia.estadao.com.br%2F&amp;paywall_dinamico=anonimo_identificado_navegg" class="btn green paywall-assine" target="_blank">Assinar</a>
+                                </div>
+                                <p class="bottom-text">Cancele quando quiser</p>
+                            </div></section></div>
+                </div>
             </div>
         </div>
     </div>
-</div> 
+</div>
