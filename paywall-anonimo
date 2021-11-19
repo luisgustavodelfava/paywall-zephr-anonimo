@@ -463,5 +463,5 @@
 </div>
 <script>
   var styles = document.getElementsByTagName("style")[0];
-  styles.innerHTML += {{blaize.customData.pwStyle}}
+  styles.innerHTML += '{{blaize.customData.pwStyle}}'
 </script>
