@@ -2849,150 +2849,159 @@ body > div > .modal[data-modal="newsletter"] .container > p strong {
 </style>
 <div id="paywall-wrapper-iframe-estadao" style="position: fixed; z-index: 999999000; width: 100%; height: 100%; left: 0px; bottom: 0px;">
     <iframe id="paywall-iframe-estadao" srcdoc="" style="width: 100%; height: 100%; border: 0px;" data-hj-allow-iframe="">
-        <div class="main" data-modal="ofertas">
-            <div class="center">
-                <div class="wrapper default">
-                    <div class="header-line"><i class="icon-lock-circle"></i> Conteúdo exclusivo para assinantes</div>
-                    <div class="container">
-                        <div class="header">
-                            <a class="logout"  href="https://acesso.estadao.com.br/login/logout/?r=https://acesso.estadao.com.br/login/?r={{blaize.customData.referrer_url}}" title="Sou assinante"><i class="icon-arrow-left-round"></i> Sou assinante</a>
-                            <a class="back-to-home" href="https://www.estadao.com.br" title="Estadão | As Últimas Notícias do Brasil e do Mundo">
-                                Destaques do dia <i class="icon-arrow-right-round"></i>
-                            </a>
-                        </div>
+        <html lang="pt-BR" class="">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            </head>
+            <body>
+                <div class="main" data-modal="ofertas">
+                    <div class="center">
+                        <div class="wrapper default">
+                            <div class="header-line"><i class="icon-lock-circle"></i> Conteúdo exclusivo para assinantes</div>
+                            <div class="container">
+                                <div class="header">
+                                    <a class="logout"  href="https://acesso.estadao.com.br/login/logout/?r=https://acesso.estadao.com.br/login/?r={{blaize.customData.referrer_url}}" title="Sou assinante"><i class="icon-arrow-left-round"></i> Sou assinante</a>
+                                    <a class="back-to-home" href="https://www.estadao.com.br" title="Estadão | As Últimas Notícias do Brasil e do Mundo">
+                                        Destaques do dia <i class="icon-arrow-right-round"></i>
+                                    </a>
+                                </div>
 
-                        <div class="inner">
-                            <div class="top">
-                                <h1 class="title-h1">Continue acompanhando a cobertura de grandes eventos do Brasil.</h1>
-                                <p>Assine e garanta informação com profundidade, análise e opinião.</p>
+                                <div class="inner">
+                                    <div class="top">
+                                        <h1 class="title-h1">Continue acompanhando a cobertura de grandes eventos do Brasil.</h1>
+                                        <p>Assine e garanta informação com profundidade, análise e opinião.</p>
+                                    </div>
+                                    <div class="lista-ofertas">
+                                        
+                                    <section class="item" data-group-id="impresso">
+                                            <ul class="tab_list">
+                                                <li class="tab active" id="tab-0-0-{{blaize.customData.collapsible_id}}" onClick="switchTab(0, 0, '{{blaize.customData.collapsible_id}}')"><span>Fim de<br>Semana<br><em>58% off</em></span></li>
+                                                <li class="tab" id="tab-0-1-{{blaize.customData.collapsible_id}}" onClick="switchTab(0, 1, '{{blaize.customData.collapsible_id}}')"><span>Todos<br>os dias<br><em>60% off</em></span></li>
+                                            </ul>
+                                            
+                                        <div class="inner-oferta active tab-0" id="card-0-0-{{blaize.customData.collapsible_id}}">
+                                                <h1 class="titulo">
+                                                    Jornal impresso (fins de semana)
+                                                    <br>+ Acesso Digital Completa
+                                                    <br>+ Voucher R$50 Nespresso
+                                                </h1>
+                                                <div class="details">
+                                                    <p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p>
+                                                    <p><i class="icon-check"></i>Aplicativo sem publicidade</p>
+                                                    <p><i class="icon-check"></i>Acervo digital desde 1875</p>
+                                                    <p><i class="icon-check"></i>Réplica do impresso em versão digital</p>
+                                                    <p><i class="icon-check"></i><strong>Versão impressa do jornal aos fins de semana</strong></p>
+                                                    <p><i class="icon-check"></i><strong>Voucher R$50 Nespresso</strong></p></div>
+                                                <div class="chapeu"></div>
+                                                
+                                                <div class="price">R$ 22,90<em>/ mês</em></div>
+                                                <div class="price-detail">Nos 6 primeiros meses</div>
+                                                <div class="alert">Após este período: R$ 43,90</div>
+                                                <div class="btn-assine assine">
+                                                    <a href="https://assine.estadao.com.br/subscribe/estadao-impresso-em-casa-2290-4390-nespresso-am300949?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_zephr_poc" class="btn green paywall-assine" target="_blank">Assinar</a>
+                                                </div>
+                                                <p class="bottom-text">Cancele quando quiser</p>
+                                        </div>
+                                        <div class="inner-oferta tab-1" id="card-0-1-{{blaize.customData.collapsible_id}}">
+                                                <h1 class="titulo">Jornal impresso (todos os dias)<br>+ Acesso Digital Completa<br>+ Voucher R$50 Nespresso</h1>
+                                                <div class="details">
+                                                    <p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p>
+                                                    <p><i class="icon-check"></i>Aplicativo sem publicidade</p>
+                                                    <p><i class="icon-check"></i>Acervo digital desde 1875</p>
+                                                    <p><i class="icon-check"></i>Réplica do impresso em versão digital</p>
+                                                    <p><i class="icon-check"></i><strong>Versão impressa do jornal todos os dias</strong></p>
+                                                    <p><i class="icon-check"></i><strong>Voucher R$50 Nespresso</strong></p></div>
+                                                <div class="chapeu"></div>
+                                                
+                                                <div class="price">R$ 52,90<em>/ mês</em></div>
+                                                <div class="price-detail">Nos 6 primeiros meses</div>
+                                                <div class="alert">Após este período: R$ 69,90</div>
+                                                <div class="btn-assine assine">
+                                                    <a href="https://assine.estadao.com.br/subscribe/estadao-impresso-em-casa-5290-6990-nespresso-am101215?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_zephr_poc" class="btn green paywall-assine" target="_blank">Assinar</a>
+                                                </div>
+                                                <p class="bottom-text">Cancele quando quiser</p>
+                                        </div>
+                                    </section>
+                                    <section class="item" data-group-id="completa">
+                                            <ul class="tab_list">
+                                                <li class="tab active" id="tab-1-0-{{blaize.customData.collapsible_id}}" onClick="switchTab(1, 0, '{{blaize.customData.collapsible_id}}')"><span>Mensal<br><em>64% off</em></span></li>
+                                                <li class="tab" id="tab-1-1-{{blaize.customData.collapsible_id}}" onClick="switchTab(1, 1, '{{blaize.customData.collapsible_id}}')"><span>Anual<br><em>81% off</em></span></li>
+                                            </ul>
+                                            
+                                        <div class="inner-oferta active tab-0" id="card-1-0-{{blaize.customData.collapsible_id}}">
+                                                <h1 class="titulo">Acesso Digital Completa</h1>
+                                                <div class="details">
+                                                    <p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p>
+                                                    <p><i class="icon-check"></i>Aplicativo sem publicidade</p>
+                                                    <p><i class="icon-check"></i><strong>Acervo digital desde 1875</strong></p>
+                                                    <p><i class="icon-check"></i><strong>Réplica do impresso em versão digital</strong></p></div>
+                                                <div class="chapeu"></div>
+                                                
+                                                <div class="price">R$ 1,90<em>/ mês</em></div>
+                                                <div class="price-detail">Nos 3 primeiros meses</div>
+                                                <div class="alert">Após este período: R$ 19,90</div>
+                                                <div class="btn-assine assine">
+                                                    <a href="https://assine.estadao.com.br/subscribe/estadao-digital-completa-190-1990-am100973?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_zephr_poc" class="btn green paywall-assine" target="_blank">Assinar</a>
+                                                </div>
+                                                <p class="bottom-text">Cancele quando quiser</p>
+                                        </div>
+                                        <div class="inner-oferta tab-1" id="card-1-1-{{blaize.customData.collapsible_id}}">
+                                                <h1 class="titulo">Acesso Digital Completa<br>+ Voucher R$30 Americanas</h1>
+                                                <div class="details"><p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p><p><i class="icon-check"></i>Aplicativo sem publicidade</p><p><i class="icon-check"></i><strong>Acervo digital desde 1875</strong></p><p><i class="icon-check"></i><strong>Réplica do impresso em versão digital</strong></p><p><i class="icon-check"></i><strong>Voucher R$30 Americanas</strong></p></div>
+                                                <div class="chapeu"></div>
+                                                
+                                                <div class="price">R$ 99,90<em>/ ano</em></div>
+                                                <div class="price-detail">No primeiro ano</div>
+                                                <div class="alert"></div>
+                                                <div class="btn-assine assine">
+                                                    <a href="https://assine.estadao.com.br/subscribe/estadao-digital-completa-9990-americanas-aa100864?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_zephr_poc" class="btn green paywall-assine" target="_blank">Assinar</a>
+                                                </div>
+                                                <p class="bottom-text">Cancele quando quiser</p>
+                                        </div>
+                                    </section>
+                                    <section class="item" data-group-id="basica">
+                                            <ul class="tab_list">
+                                                <li class="tab active" id="tab-2-0-{{blaize.customData.collapsible_id}}" onClick="switchTab(2, 0, '{{blaize.customData.collapsible_id}}')"><span>Mensal<br><em>42% off</em></span></li>
+                                                <li class="tab" id="tab-2-1-{{blaize.customData.collapsible_id}}" onClick="switchTab(2, 1, '{{blaize.customData.collapsible_id}}')"><span>Anual<br><em>61% off</em></span></li>
+                                            </ul>
+                                            
+                                        <div class="inner-oferta active tab-0"  id="card-2-0-{{blaize.customData.collapsible_id}}">
+                                                <h1 class="titulo">Acesso Digital Básica</h1>
+                                                <div class="details">
+                                                    <p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p>
+                                                    <p><i class="icon-check"></i>Aplicativo sem publicidade</p></div>
+                                                <div class="chapeu"></div>
+                                                
+                                                <div class="price">R$ 4,90<em>/ mês</em></div>
+                                                <div class="price-detail">Nos 3 primeiros meses</div>
+                                                <div class="alert">Após este período: R$ 9,90</div>
+                                                <div class="btn-assine assine">
+                                                    <a href="https://assine.estadao.com.br/subscribe/estadao-digital-basica-490-990-am101172?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_zephr_poc" class="btn green paywall-assine" target="_blank">Assinar</a>
+                                                </div>
+                                                <p class="bottom-text">Cancele quando quiser</p>
+                                        </div>
+                                        <div class="inner-oferta tab-1" id="card-2-1-{{blaize.customData.collapsible_id}}">
+                                                <h1 class="titulo">Acesso Digital Básica</h1>
+                                                <div class="details"><p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p><p><i class="icon-check"></i>Aplicativo sem publicidade</p></div>
+                                                <div class="chapeu"></div>
+                                                
+                                                <div class="price">R$ 69,90<em>/ ano</em></div>
+                                                <div class="price-detail">No primeiro ano</div>
+                                                <div class="alert"></div>
+                                                <div class="btn-assine assine">
+                                                    <a href="https://assine.estadao.com.br/subscribe/estadao-digital-basica-6990-aa100850?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_zephr_poc" class="btn green paywall-assine" target="_blank">Assinar</a>
+                                                </div>
+                                                <p class="bottom-text">Cancele quando quiser</p>
+                                        </div></section></div>
+                                </div>
                             </div>
-                            <div class="lista-ofertas">
-                                
-                            <section class="item" data-group-id="impresso">
-                                    <ul class="tab_list">
-                                        <li class="tab active" id="tab-0-0-{{blaize.customData.collapsible_id}}" onClick="switchTab(0, 0, '{{blaize.customData.collapsible_id}}')"><span>Fim de<br>Semana<br><em>58% off</em></span></li>
-                                        <li class="tab" id="tab-0-1-{{blaize.customData.collapsible_id}}" onClick="switchTab(0, 1, '{{blaize.customData.collapsible_id}}')"><span>Todos<br>os dias<br><em>60% off</em></span></li>
-                                    </ul>
-                                    
-                                <div class="inner-oferta active tab-0" id="card-0-0-{{blaize.customData.collapsible_id}}">
-                                        <h1 class="titulo">
-                                            Jornal impresso (fins de semana)
-                                            <br>+ Acesso Digital Completa
-                                            <br>+ Voucher R$50 Nespresso
-                                        </h1>
-                                        <div class="details">
-                                            <p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p>
-                                            <p><i class="icon-check"></i>Aplicativo sem publicidade</p>
-                                            <p><i class="icon-check"></i>Acervo digital desde 1875</p>
-                                            <p><i class="icon-check"></i>Réplica do impresso em versão digital</p>
-                                            <p><i class="icon-check"></i><strong>Versão impressa do jornal aos fins de semana</strong></p>
-                                            <p><i class="icon-check"></i><strong>Voucher R$50 Nespresso</strong></p></div>
-                                        <div class="chapeu"></div>
-                                        
-                                        <div class="price">R$ 22,90<em>/ mês</em></div>
-                                        <div class="price-detail">Nos 6 primeiros meses</div>
-                                        <div class="alert">Após este período: R$ 43,90</div>
-                                        <div class="btn-assine assine">
-                                            <a href="https://assine.estadao.com.br/subscribe/estadao-impresso-em-casa-2290-4390-nespresso-am300949?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_zephr_poc" class="btn green paywall-assine" target="_blank">Assinar</a>
-                                        </div>
-                                        <p class="bottom-text">Cancele quando quiser</p>
-                                </div>
-                                <div class="inner-oferta tab-1" id="card-0-1-{{blaize.customData.collapsible_id}}">
-                                        <h1 class="titulo">Jornal impresso (todos os dias)<br>+ Acesso Digital Completa<br>+ Voucher R$50 Nespresso</h1>
-                                        <div class="details">
-                                            <p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p>
-                                            <p><i class="icon-check"></i>Aplicativo sem publicidade</p>
-                                            <p><i class="icon-check"></i>Acervo digital desde 1875</p>
-                                            <p><i class="icon-check"></i>Réplica do impresso em versão digital</p>
-                                            <p><i class="icon-check"></i><strong>Versão impressa do jornal todos os dias</strong></p>
-                                            <p><i class="icon-check"></i><strong>Voucher R$50 Nespresso</strong></p></div>
-                                        <div class="chapeu"></div>
-                                        
-                                        <div class="price">R$ 52,90<em>/ mês</em></div>
-                                        <div class="price-detail">Nos 6 primeiros meses</div>
-                                        <div class="alert">Após este período: R$ 69,90</div>
-                                        <div class="btn-assine assine">
-                                            <a href="https://assine.estadao.com.br/subscribe/estadao-impresso-em-casa-5290-6990-nespresso-am101215?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_zephr_poc" class="btn green paywall-assine" target="_blank">Assinar</a>
-                                        </div>
-                                        <p class="bottom-text">Cancele quando quiser</p>
-                                </div>
-                            </section>
-                            <section class="item" data-group-id="completa">
-                                    <ul class="tab_list">
-                                        <li class="tab active" id="tab-1-0-{{blaize.customData.collapsible_id}}" onClick="switchTab(1, 0, '{{blaize.customData.collapsible_id}}')"><span>Mensal<br><em>64% off</em></span></li>
-                                        <li class="tab" id="tab-1-1-{{blaize.customData.collapsible_id}}" onClick="switchTab(1, 1, '{{blaize.customData.collapsible_id}}')"><span>Anual<br><em>81% off</em></span></li>
-                                    </ul>
-                                    
-                                <div class="inner-oferta active tab-0" id="card-1-0-{{blaize.customData.collapsible_id}}">
-                                        <h1 class="titulo">Acesso Digital Completa</h1>
-                                        <div class="details">
-                                            <p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p>
-                                            <p><i class="icon-check"></i>Aplicativo sem publicidade</p>
-                                            <p><i class="icon-check"></i><strong>Acervo digital desde 1875</strong></p>
-                                            <p><i class="icon-check"></i><strong>Réplica do impresso em versão digital</strong></p></div>
-                                        <div class="chapeu"></div>
-                                        
-                                        <div class="price">R$ 1,90<em>/ mês</em></div>
-                                        <div class="price-detail">Nos 3 primeiros meses</div>
-                                        <div class="alert">Após este período: R$ 19,90</div>
-                                        <div class="btn-assine assine">
-                                            <a href="https://assine.estadao.com.br/subscribe/estadao-digital-completa-190-1990-am100973?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_zephr_poc" class="btn green paywall-assine" target="_blank">Assinar</a>
-                                        </div>
-                                        <p class="bottom-text">Cancele quando quiser</p>
-                                </div>
-                                <div class="inner-oferta tab-1" id="card-1-1-{{blaize.customData.collapsible_id}}">
-                                        <h1 class="titulo">Acesso Digital Completa<br>+ Voucher R$30 Americanas</h1>
-                                        <div class="details"><p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p><p><i class="icon-check"></i>Aplicativo sem publicidade</p><p><i class="icon-check"></i><strong>Acervo digital desde 1875</strong></p><p><i class="icon-check"></i><strong>Réplica do impresso em versão digital</strong></p><p><i class="icon-check"></i><strong>Voucher R$30 Americanas</strong></p></div>
-                                        <div class="chapeu"></div>
-                                        
-                                        <div class="price">R$ 99,90<em>/ ano</em></div>
-                                        <div class="price-detail">No primeiro ano</div>
-                                        <div class="alert"></div>
-                                        <div class="btn-assine assine">
-                                            <a href="https://assine.estadao.com.br/subscribe/estadao-digital-completa-9990-americanas-aa100864?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_zephr_poc" class="btn green paywall-assine" target="_blank">Assinar</a>
-                                        </div>
-                                        <p class="bottom-text">Cancele quando quiser</p>
-                                </div>
-                            </section>
-                            <section class="item" data-group-id="basica">
-                                    <ul class="tab_list">
-                                        <li class="tab active" id="tab-2-0-{{blaize.customData.collapsible_id}}" onClick="switchTab(2, 0, '{{blaize.customData.collapsible_id}}')"><span>Mensal<br><em>42% off</em></span></li>
-                                        <li class="tab" id="tab-2-1-{{blaize.customData.collapsible_id}}" onClick="switchTab(2, 1, '{{blaize.customData.collapsible_id}}')"><span>Anual<br><em>61% off</em></span></li>
-                                    </ul>
-                                    
-                                <div class="inner-oferta active tab-0"  id="card-2-0-{{blaize.customData.collapsible_id}}">
-                                        <h1 class="titulo">Acesso Digital Básica</h1>
-                                        <div class="details">
-                                            <p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p>
-                                            <p><i class="icon-check"></i>Aplicativo sem publicidade</p></div>
-                                        <div class="chapeu"></div>
-                                        
-                                        <div class="price">R$ 4,90<em>/ mês</em></div>
-                                        <div class="price-detail">Nos 3 primeiros meses</div>
-                                        <div class="alert">Após este período: R$ 9,90</div>
-                                        <div class="btn-assine assine">
-                                            <a href="https://assine.estadao.com.br/subscribe/estadao-digital-basica-490-990-am101172?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_zephr_poc" class="btn green paywall-assine" target="_blank">Assinar</a>
-                                        </div>
-                                        <p class="bottom-text">Cancele quando quiser</p>
-                                </div>
-                                <div class="inner-oferta tab-1" id="card-2-1-{{blaize.customData.collapsible_id}}">
-                                        <h1 class="titulo">Acesso Digital Básica</h1>
-                                        <div class="details"><p><i class="icon-check"></i>Acesso total ao portal <strong>Estadão</strong></p><p><i class="icon-check"></i>Aplicativo sem publicidade</p></div>
-                                        <div class="chapeu"></div>
-                                        
-                                        <div class="price">R$ 69,90<em>/ ano</em></div>
-                                        <div class="price-detail">No primeiro ano</div>
-                                        <div class="alert"></div>
-                                        <div class="btn-assine assine">
-                                            <a href="https://assine.estadao.com.br/subscribe/estadao-digital-basica-6990-aa100850?canal=PAY&amp;referrer_url={{blaize.customData.referrer_url}}&amp;paywall_dinamico=paywall_zephr_poc" class="btn green paywall-assine" target="_blank">Assinar</a>
-                                        </div>
-                                        <p class="bottom-text">Cancele quando quiser</p>
-                                </div></section></div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </body>
+        </html>   
     </iframe>
 </div>
 <script>
