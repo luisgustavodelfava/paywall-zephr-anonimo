@@ -146,6 +146,9 @@ body {
     margin: 0;
     padding: 0;
 }
+body.page-area-subhome,.page-area-loterias {
+       overflow: hidden;
+}
 body * {
     box-sizing: border-box;
 }
